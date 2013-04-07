@@ -11,12 +11,6 @@ Attribute VB_Exposed = False
 
 Private pNimi As String
 Private pWorksheet As Worksheet
-'Private pLipa As CMotions
-'Private pTosu As CMotions
-'Private pTalousarvio As CMotions
-'Private pKannanotot As CMotions
-'Private pYhteiskannanotto As CMotions
-'Private pPonnet As CMotions
 Private pKokouskohdat As Collection
 
 ' Regular getters and letters
@@ -33,42 +27,6 @@ End Property
 Public Property Let Worksheet(Value As Worksheet)
     Set pWorksheet = Value
 End Property
-'Public Property Get Lipa() As CMotions
-'    Set Lipa = pLipa
-'End Property
-'Public Property Let Lipa(Value As CMotions)
-'    Set pLipa = Value
-'End Property
-'Public Property Get Tosu() As CMotions
-'    Set Tosu = pTosu
-'End Property
-'Public Property Let Tosu(Value As CMotions)
-'    Set pTosu = Value
-'End Property
-'Public Property Get Talousarvio() As CMotions
-'    Set Talousarvio = pTalousarvio
-'End Property
-'Public Property Let Talousarvio(Value As CMotions)
-'    Set pTalousarvio = Value
-'End Property
-'Public Property Get Kannanotot() As CMotions
-'    Set Kannanotot = pKannanotot
-'End Property
-'Public Property Let Kannanotot(Value As CMotions)
-'    Set pKannanotot = Value
-'End Property
-'Public Property Get Yhteiskannanotto() As CMotions
-'    Set Yhteiskannanotto = pYhteiskannanotto
-'End Property
-'Public Property Let Yhteiskannanotto(Value As CMotions)
-'    Set pYhteiskannanotto = Value
-'End Property
-'Public Property Get Ponnet() As CMotions
-'    Set Ponnet = pPonnet
-'End Property
-'Public Property Let Ponnet(Value As CMotions)
-'    Set pPonnet = Value
-'End Property
 Public Property Get Kokouskohdat() As Collection
     Set Kokouskohdat = pKokouskohdat
 End Property
@@ -95,13 +53,6 @@ End Sub
 Private Sub CalculateAll()
     
     Me.Kokouskohdat = New Collection
-    
-'    Me.Lipa = Calculate(10, 17)
-'    Me.Tosu = Calculate(21, 56)
-'    Me.Talousarvio = Calculate(63, 65)
-'    Me.Kannanotot = Calculate(68, 79)
-'    Me.Yhteiskannanotto = Calculate(83, 83)
-'    Me.Ponnet = Combine(Calculate(57, 59), Calculate(88, 91))
     
     Me.Kokouskohdat.Add Calculate(10, 17) ' 1. Lipa
     Me.Kokouskohdat.Add Calculate(21, 56) ' 2. Tosu
