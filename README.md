@@ -1,4 +1,3 @@
-syl-liittarin_muutosesityslaskenta
-==================================
+EN: Developed a VBA program to extract some statistics from a spreadsheet (in Finnish). Mostly for trying out VBA.
 
-Työkalu SYL:n liittokokouksen muutosesitystilastojen laskentaan muutosesitysexcelistä. 
+FI: Työkalu SYL:n liittokokouksen muutosesitystilastojen laskentaan muutosesitysexcelistä. 
